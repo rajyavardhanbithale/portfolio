@@ -1,0 +1,19 @@
+.glass-icon {
+    background: rgba(22, 22, 22, 0.05);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+
+    transition: background 1s ease-in-out, transform 0.5s ease-in-out;
+
+
+}
+
+.glass-icon:hover {
+    background: rgba(22, 22, 22, 0.08);
+    transform: translateY(-2px);
+    transform: scale(5px);
+}
+

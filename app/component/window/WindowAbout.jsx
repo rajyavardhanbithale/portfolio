@@ -7,24 +7,29 @@ const mono = DM_Mono({ subsets: ["latin"], weight: ["300"] });
 
 const info = DM_Sans({ subsets: ["latin"], weight: ["500"] });
 
-export default function Window() {
+export default function WindowAbout(props) {
     const config = {
         "title": "Welcome"
     }
 
+    function handleClose() {
+        console.log("op");
+        props.medium("");
+    }
+
     return (
         <>
-            <Draggable defaultPosition={{ x: 200, y: 300 }}>
+            <Draggable defaultPosition={{ x: 0, y: 0 }}  cancel=".react-draggable-handle">
 
                 <div className="w-[90%] md:w-[60%] lg:w-[35%] shadow-xl">
                     {/* Title bar */}
-                    <div>
-                        <div className="title rounded-t-lg px-5 py-2 flex justify-start gap-2">
-                            <div className="w-4 h-4 bg-red-400 rounded-full"></div>
+                    <div className="flex title rounded-t-lg">
+                        <div className="z-10   px-5 py-2 flex justify-start gap-2">
+                            <div onClick={handleClose} className="w-4 h-4 bg-red-400 rounded-full"></div>
                             <div className="w-4 h-4 bg-green-400 rounded-full"></div>
                             <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
                         </div>
-                        <div className="absolute flex w-full top-1 left-2 justify-center">
+                        <div className="text-center align-middle w-[65%] my-auto">
                             <span className={`text-gray-100 font-semibold text-base ${mono.className}`}>{config.title}</span>
                         </div>
                     </div>
