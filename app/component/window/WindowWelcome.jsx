@@ -33,7 +33,7 @@ export default function Window() {
                     <div className="py-3 card bg-[#212024] rounded-b-lg">
                         <div className="flex flex-col w-full justify-center align-middle text-center p-2 md:p-4 capitalize">
                             <span className="text-white lg:md:text-xl text-base">Hello  </span>
-                            <span className={`text-white text-xl md:text-2xl lg:text-3xl  my-2 py-2 ${info.className}`}>i'm  Rajyavardhan Bithale</span>
+                            <span className={`text-white text-xl md:text-2xl lg:text-3xl  my-2 py-2 ${info.className}`}>i&lsquo;m  Rajyavardhan Bithale</span>
                             <img src="https://avatars.githubusercontent.com/u/70558897?v=4" className="w-[50%] md:w-[40%] lg:w-[30%] mx-auto rounded-2xl" alt="my image" />
                             <span className={`text-white my-4 ${info.className}  lg:text-xl `}>Proficient Python Developer and Full Stack Web Developer experienced in backend development, API integration, database management, project management, and web security.</span>
                         </div>
