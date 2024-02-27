@@ -10,11 +10,12 @@ export default function Home() {
   const [isOpen,setOpen] = useState(true)
 
   console.log(process);
+  console.log(isOpen);
   return (
     <>
       <Desktop passChildData={setProcess} ></Desktop>
       
-      {process === "abt" && <Window medium={setProcess} isOpen={isOpen} open={setOpen}/>}
+      {process === "abt" && <Window medium={setProcess} isOpen={isOpen} setOpen={setOpen}/>}
     </>
   );
 }
