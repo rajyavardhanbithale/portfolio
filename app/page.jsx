@@ -1,4 +1,5 @@
-import Window from "./component/window/Window";
+import Desktop from "./component/desktop/Desktop";
+import Window from "./component/window/WindowWelcome";
 
 
 
@@ -7,7 +8,8 @@ export default function Home() {
 
   return (
     <>
-     <Window></Window>
+      <Desktop></Desktop>
+      <Window></Window>
     </>
   );
 }
