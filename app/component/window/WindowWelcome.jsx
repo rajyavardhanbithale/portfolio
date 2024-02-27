@@ -30,8 +30,10 @@ export default function Window() {
                     {/* Window Body */}
                     <div className="py-5 card bg-[#212024] rounded-b-lg">
                         <div className="flex flex-col w-full justify-center align-middle text-center capitalize">
-                            <span className="text-white">Hello User Welcome to my website </span>
-                            <span className="text-white">i'm  Rajyavardhan Bithale</span>
+                            <span className="text-white text-base">Hello  </span>
+                            <span className="text-white text-xl my-2">i'm  Rajyavardhan Bithale</span>
+                            <img src="https://avatars.githubusercontent.com/u/70558897?v=4" className="w-[40%] mx-auto rounded-2xl" alt="my image" />
+                            <span className="text-white my-4">Proficient Python Developer and Full Stack Web Developer experienced in backend development, API integration, database management, project management, and web security.</span>
                         </div>
 
                     </div>
