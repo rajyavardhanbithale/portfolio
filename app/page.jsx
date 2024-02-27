@@ -7,13 +7,14 @@ import Window from "./component/window/WindowAbout";
 
 export default function Home() {
   const [process,setProcess] = useState("")
+  const [isOpen,setOpen] = useState(true)
 
   console.log(process);
   return (
     <>
       <Desktop passChildData={setProcess} ></Desktop>
       
-      {process === "abt" && <Window medium={setProcess}/>}
+      {process === "abt" && <Window medium={setProcess} isOpen={isOpen} open={setOpen}/>}
     </>
   );
 }
