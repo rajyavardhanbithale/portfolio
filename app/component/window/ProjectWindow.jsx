@@ -12,15 +12,21 @@ import { project } from './projects'
 export default function WindowProject(props) {
     const [open, setOpen] = useState(props.isOpen)
 
+    function handleClose(){
+        setOpen(false)
+        setTimeout(()=>{
+            props.medium("")
+        },200)
+    }
    
     return (
         <>
             <Draggable defaultPosition={{ x: 0, y: 0 }} >
                 <div className={`z-10 w-full `}>
-                    <div className={`${open ? 'animate-jump-in animate-duration-500 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in '} shadow-xl }`}>
+                    <div className={`${open ? 'animate-jump-in animate-duration-300 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in '} shadow-xl }`}>
 
                         {/* Titlebar */}
-                        <TitleBar title={"project"} />
+                        <TitleBar title={"project"} handleClose={handleClose} />
 
                         {/* Window Body */}
                         <div className="p-0 card bg-[#212024] rounded-b-lg ">

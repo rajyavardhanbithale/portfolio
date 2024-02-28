@@ -1827,6 +1827,18 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
+moment-timezone@^0.5.33:
+  version "0.5.45"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.45.tgz#cb685acd56bac10e69d93c536366eb65aa6bcf5c"
+  integrity sha512-HIWmqA86KcmCAhnMAN0wuDOARV/525R2+lOLotuGFzn4HO+FH+/645z2wx0Dt3iDv6/p61SIvKnDstISainhLQ==
+  dependencies:
+    moment "^2.29.4"
+
+moment@^2.29.1, moment@^2.29.4, moment@^2.30.1:
+  version "2.30.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.30.1.tgz#f8c91c07b7a786e30c59926df530b4eac96974ae"
+  integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
+
 ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
@@ -2175,12 +2187,25 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-live-clock@^6.1.19:
+  version "6.1.19"
+  resolved "https://registry.yarnpkg.com/react-live-clock/-/react-live-clock-6.1.19.tgz#d7fa785367030f42cc8a3667a0a1db33459ecd95"
+  integrity sha512-XgCCq3iDB4brMrZ61W7qIVlCiVu8zJxNoXSWyi7Z2zCP8SBeM0qrLX+BcvIzip0jOGHlkvuis62vKzNqfM7AAA==
+  dependencies:
+    moment "^2.29.1"
+    moment-timezone "^0.5.33"
+
 react-mdr@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/react-mdr/-/react-mdr-0.1.5.tgz#2e9bcfb964500b33b41cfa76dbb594e8f39f8962"
   integrity sha512-KOIxi/ThzUhvniWOvpV9dkore5CL05tbFQPK7U4GKZu2WlzRp+FAdgXgr+NF7hZVmkb35Yf3NMUObbtMoB9ZRQ==
   dependencies:
     "@babel/runtime" "^7.16.3"
+
+react-moment@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/react-moment/-/react-moment-1.1.3.tgz#829b21dfb279aa6db47ce4f1ac2555af17a1bcdc"
+  integrity sha512-8EPvlUL8u6EknPp1ISF5MQ3wx2OHJVXIP/iZc4wRh3iV3XozftZERDv9ANZeAtMlhNNQHdFoqcZHFUkBSTONfA==
 
 react-spring@^9.7.3:
   version "9.7.3"

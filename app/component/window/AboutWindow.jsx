@@ -26,7 +26,7 @@ export default function WindowAbout(props) {
             <Draggable defaultPosition={{ x: 50, y: 50}}>
 
                 <div className={`w-[90%] md:w-[60%] lg:w-[35%] `}>
-                    <div className={`${open ? 'animate-jump-in animate-duration-500 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in shadow-xl'} shadow-xl}`}>
+                    <div className={`${open ? 'animate-jump-in animate-duration-300 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in shadow-xl'} shadow-xl}`}>
 
                         {/* Title bar */}
                         <TitleBar title={"Welcome"} handleClose={handleClose} ></TitleBar>
