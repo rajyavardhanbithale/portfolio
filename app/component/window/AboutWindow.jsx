@@ -3,7 +3,7 @@
 import { DM_Sans } from "next/font/google";
 import Draggable from "react-draggable";
 import './window.css'
-import TitleBar from "./TitleBar";
+import TitleBar from "../titlebar/TitleBar";
 import { useState } from "react";
 
 

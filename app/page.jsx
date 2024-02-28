@@ -19,6 +19,7 @@ export default function Home() {
       {process === "proj" && <WindowProject medium={setProcess} isOpen={isOpen} setOpen={setOpen} />}
     </div>
       <Desktop passChildData={setProcess} ></Desktop>
+      <WindowProject ></WindowProject>
 
     </>
   );
