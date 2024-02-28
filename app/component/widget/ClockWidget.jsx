@@ -16,15 +16,13 @@ export default function ClockWidget() {
     }, 800);
 
 
-    console.log(displayNumber);
-
 
     return (
         <>
             {displayNumber ? (
                 <>
                     <div className="flex flex-col justify-center items-center w-screen h-screen">
-                        <div class="loader "></div>
+                        <div className="loader "></div>
 
                     </div>
                 </>

@@ -11,12 +11,12 @@ const info = DM_Sans({ subsets: ["latin"], weight: ["500"] });
 
 export default function WindowAbout(props) {
 
-    const [open, setOpen] = useState(props.isOpen)
+    const [open, setOpen] = useState(props.process.includes("abt"))
 
     function handleClose() {
         setOpen(false)
         setTimeout(() => {
-            props.medium("");
+            props.removeProcess(processList => processList.filter(proc => proc !== "abt"))
         }, 500);
         // props.medium("");
     }

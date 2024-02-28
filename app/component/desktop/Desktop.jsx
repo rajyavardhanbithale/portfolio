@@ -9,7 +9,8 @@ import './desktop.css'
 export default function Desktop(props) {
     
     const handleProcess = (processName) =>{
-        props.passChildData(processName)
+        
+        props.setProcess(processList => processList.includes(processName) ? processList : [...processList,processName])
     }
 
     return (

@@ -10,12 +10,12 @@ import './window.css'
 import { project } from './projects'
 // Follow File Manager Theme
 export default function WindowProject(props) {
-    const [open, setOpen] = useState(props.isOpen)
+    const [open, setOpen] = useState(props.process.includes("proj"))
 
     function handleClose(){
         setOpen(false)
         setTimeout(()=>{
-            props.medium("")
+            props.removeProcess(processList => processList.filter(proc => proc !== "proj"))
         },200)
     }
    
