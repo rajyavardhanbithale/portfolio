@@ -12,3 +12,9 @@
     backdrop-filter: blur(10.3px);
     -webkit-backdrop-filter: blur(10.3px);
 }
+
+.card-left {
+
+    background-color: rgba(33, 32, 36, 0.329);
+
+}

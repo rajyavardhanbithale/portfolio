@@ -28,7 +28,7 @@ export default function Desktop(props) {
             
 
             {/* Desktop Icon */}
-            <div className="flex flex-col gap-5 py-16 px-8 max-w-max capitalize text-slate-800">
+            <div className="-z-40 flex flex-col gap-5 py-16 px-8 max-w-max capitalize text-slate-800">
                 <div onClick={() => handleProcess("abt")} className="flex flex-col bg-[#1616160e] rounded-2xl p-2 glass-icon">
                     <IonIcon icon={personOutline} className="text-5xl w-full " />
                     <span className="p-1">about me</span>
