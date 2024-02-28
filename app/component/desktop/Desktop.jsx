@@ -16,7 +16,7 @@ export default function Desktop(props) {
         <>
             {/* Wallpaper  */}
             <div className="-z-50 absolute">
-                <Image src={'/wallpaper/wallpaper1.jpg'}
+                <Image src={'/wallpaper/wallpaper1.webp'}
                     width={0}
                     height={0}
                     alt="middle"
