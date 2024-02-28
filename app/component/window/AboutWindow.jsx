@@ -23,7 +23,7 @@ export default function WindowAbout(props) {
 
     return (
         <>
-            <Draggable defaultPosition={{ x: 50, y: 50}}>
+            <Draggable defaultPosition={{ x: 0, y: 0}}>
 
                 <div className={`w-[90%] md:w-[60%] lg:w-[35%] `}>
                     <div className={`${open ? 'animate-jump-in animate-duration-300 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in shadow-xl'} shadow-xl}`}>

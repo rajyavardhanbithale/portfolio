@@ -22,7 +22,7 @@ export default function WindowProject(props) {
     return (
         <>
             <Draggable defaultPosition={{ x: 0, y: 0 }} >
-                <div className={`z-10 w-full `}>
+                <div className={` w-[50rem] `}>
                     <div className={`${open ? 'animate-jump-in animate-duration-300 animate-ease-in' : 'animate-jump-out animate-duration-300 animate-ease-in '} shadow-xl }`}>
 
                         {/* Titlebar */}

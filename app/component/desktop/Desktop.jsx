@@ -7,10 +7,11 @@ import { flameOutline, folderOutline, languageOutline, personOutline } from 'ion
 
 import './desktop.css'
 export default function Desktop(props) {
-    
-    const handleProcess = (processName) =>{
-        
-        props.setProcess(processList => processList.includes(processName) ? processList : [...processList,processName])
+
+    const handleProcess = (processName) => {
+        props.setProcess(processList =>
+            processList.includes(processName) ? processList : [...processList, processName]
+        );
     }
 
     return (
@@ -26,7 +27,7 @@ export default function Desktop(props) {
                 >
                 </Image>
             </div>
-            
+
 
             {/* Desktop Icon */}
             <div className="-z-40 flex flex-col gap-5 py-16 px-8 max-w-max capitalize text-slate-800">
@@ -38,13 +39,13 @@ export default function Desktop(props) {
                 <div onClick={() => handleProcess("proj")} className="flex flex-col bg-[#1616160e] rounded-2xl p-2 glass-icon flow-gradient">
                     <IonIcon icon={folderOutline} className="text-5xl w-full" />
                     <span className="p-1 text-center">projects</span>
-                </div> 
-                
+                </div>
+
                 <div onClick={() => handleProcess("skl")} className="flex flex-col bg-[#1616160e] rounded-2xl p-2 glass-icon">
                     <IonIcon icon={flameOutline} className="text-5xl w-full" />
                     <span className="p-1 text-center">skill</span>
-                </div> 
-                
+                </div>
+
                 <div onClick={() => handleProcess("lang")} className="flex flex-col bg-[#1616160e] rounded-2xl p-2 glass-icon">
                     <IonIcon icon={languageOutline} className="text-5xl w-full" />
                     <span className="p-1 text-center">language</span>
