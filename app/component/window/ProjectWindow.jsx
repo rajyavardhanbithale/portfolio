@@ -12,7 +12,7 @@ import { project } from './projects'
 export default function WindowProject(props) {
     const [open, setOpen] = useState(props.isOpen)
 
-    console.log(project);
+   
     return (
         <>
             <Draggable defaultPosition={{ x: 0, y: 0 }} >

@@ -16,7 +16,9 @@ export default function TitleBar(props) {
                     <div className="w-4 h-4 bg-green-400 rounded-full"></div>
                     <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
                 </div>
-                
+                <div className="flex w-full justify-center my-auto ">
+                    <span className={` text-gray-100 font-semibold text-base capitalize ${mono.className}`}>{title}</span>
+                </div>
             </div>
 
         </>
