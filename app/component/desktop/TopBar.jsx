@@ -2,7 +2,11 @@
 import { IonIcon } from '@ionic/react'
 import './desktop.css'
 import { cloudDoneOutline, contract, earthOutline, fingerPrintOutline, power, powerOutline, sunnyOutline } from 'ionicons/icons'
+import { useState } from 'react';
+
 export default function TopBar() {
+    const [isFullScreen, setIsFullScreen] = useState(false);
+
 
     function handleActionButton(action) {
         switch (action) {
@@ -11,22 +15,44 @@ export default function TopBar() {
                 window.close();
                 break;
 
-            case 'maxi':
-                const element = document.documentElement;
-                if (element.requestFullscreen) {
-                  element.requestFullscreen();
-                } else if (element.mozRequestFullScreen) {
-                  element.mozRequestFullScreen();
-                } else if (element.webkitRequestFullscreen) {
-                  element.webkitRequestFullscreen();
-                } else if (element.msRequestFullscreen) {
-                  element.msRequestFullscreen();
+            case 'toggleScreen':
+                if (!isFullScreen) {
+                    enterFullScreen();
+                } else {
+                    exitFullScreen();
                 }
 
             default:
                 break;
         }
     }
+
+    const enterFullScreen = () => {
+        const element = document.documentElement;
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+        setIsFullScreen(true);
+    };
+
+    const exitFullScreen = () => {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+        setIsFullScreen(false);
+    };
 
     return (
         <>
@@ -39,7 +65,7 @@ export default function TopBar() {
 
                     <IonIcon icon={cloudDoneOutline}></IonIcon>
                     <IonIcon icon={earthOutline}></IonIcon>
-                    <div onClick={() => handleActionButton('maxi')} >
+                    <div onClick={() => handleActionButton('toggleScreen')} >
                         <IonIcon icon={contract}></IonIcon>
 
                     </div>
