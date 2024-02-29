@@ -6,6 +6,7 @@ import { flameOutline, folderOutline, languageOutline, personOutline } from 'ion
 
 
 import './desktop.css'
+import TopBar from "./TopBar";
 export default function Desktop(props) {
 
     const handleProcess = (processName) => {
@@ -28,9 +29,11 @@ export default function Desktop(props) {
                 </Image>
             </div>
 
+            {/* TopBar */}
+            <TopBar></TopBar>
 
             {/* Desktop Icon */}
-            <div className="-z-40 flex flex-col gap-5 py-16 px-8 max-w-max capitalize text-slate-800">
+            <div className="-z-40 mx-auto md:mx-0 grid grid-cols-3 md:flex md:flex-col gap-5 md:py-16 md:px-8  max-w-max capitalize text-slate-800 scale-75 md:scale-100">
                 <div onClick={() => handleProcess("abt")} className="flex flex-col bg-[#1616160e] rounded-2xl p-2 glass-icon">
                     <IonIcon icon={personOutline} className="text-5xl w-full " />
                     <span className="p-1">about me</span>

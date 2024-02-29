@@ -17,3 +17,15 @@
     transform: scale(5px);
 }
 
+.glass-top {
+    background: rgba(104, 104, 104, 0.288);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+
+    transition: background 5s ease-in-out, transform 0.5s ease-in-out;
+
+
+}
